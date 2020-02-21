@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baby.work.mapper.BorrowMapper">
+    <insert id="add" parameterType="com.baby.work.pojo.Borrow">
+        insert into t_borrow(id,borrow_user_id,borrow_username,title,description,repayment_type,borrow_amount,year_rate,repayment_month,apply_time,bid_days,total_interest)
+        values(#{id},#{borrowUserId},#{borrowUsername},#{title},#{description},#{repaymentType},#{borrowAmount},#{yearRate},#{repaymentMonth},#{applyTime},#{bidDays},#{totalInterest})
+    </insert>
+
+</mapper>
